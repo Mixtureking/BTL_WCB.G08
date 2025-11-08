@@ -1,0 +1,182 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 40px;
+    position: relative;
+}
+
+.logo {
+    background: #ccc;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+    .nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+        .nav a.active {
+            color: #007bff;
+        }
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.filter-section {
+    padding: 30px 40px 10px;
+}
+
+    .filter-section h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+.filter-controls {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+    .filter-controls select {
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+.event-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.event-card {
+    background: #f5f5f5;
+    width: 250px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.event-img {
+    background: #ccc;
+    height: 130px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.event-card button {
+    margin-top: 10px;
+    background: #ddd;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .event-card button:hover {
+        background: #ccc;
+    }
+
+.pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+    .pagination button {
+        border: 1px solid #ccc;
+        background: #fff;
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .pagination button.active {
+            background: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: #f1f1f1;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 150px;
+    }
+
+        .nav.active {
+            display: flex;
+        }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .filter-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .event-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

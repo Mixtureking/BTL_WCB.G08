@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sự kiện</title>
+    <link rel="stylesheet" href="css/styleDanhSachSuKien.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#" class="active">Sự kiện</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Đăng nhập</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <section class="filter-section">
+        <h2>Lọc sự kiện</h2>
+        <div class="filter-controls">
+            <select>
+                <option>Thời gian</option>
+                <option>Tuần này</option>
+                <option>Tháng này</option>
+                <option>Năm nay</option>
+            </select>
+            <select>
+                <option>Người tổ chức</option>
+                <option>Trường</option>
+                <option>Khoa</option>
+                <option>Câu lạc bộ</option>
+            </select>
+            <select>
+                <option>Thể loại</option>
+                <option>Học thuật</option>
+                <option>Văn nghệ</option>
+                <option>Thể thao</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="event-list">
+        <div class="event-card">
+            <div class="event-img"></div>
+            <h3>Tên sự kiện</h3>
+            <p>Ngày: 12/08/2024</p>
+            <p>Địa điểm: Hội trường A</p>
+            <button>Xem chi tiết</button>
+        </div>
+        <div class="event-card">
+            <div class="event-img"></div>
+            <h3>Tên sự kiện</h3>
+            <p>Ngày: 15/08/2024</p>
+            <p>Địa điểm: Phòng B202</p>
+            <button>Xem chi tiết</button>
+        </div>
+        <div class="event-card">
+            <div class="event-img"></div>
+            <h3>Tên sự kiện</h3>
+            <p>Ngày: 20/08/2024</p>
+            <p>Địa điểm: Sân vận động</p>
+            <button>Xem chi tiết</button>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>&gt;</button>
+    </div>
+
+    <footer>
+        <p>© 2025 - Trang sự kiện trường học</p>
+    </footer>
+
+    <script src="js/jsDanhSachSuKien.js"></script>
+</body>
+</html>
