@@ -9,7 +9,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
-/*Đây là header*/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ header {
         .nav a.active {
             color: #007bff;
         }
-/*Hết header*/
+
 .auth-container {
     display: flex;
     justify-content: center;
