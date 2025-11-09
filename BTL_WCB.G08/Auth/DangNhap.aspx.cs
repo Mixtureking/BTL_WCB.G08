@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using BTL_WCB.G08;
+using System.Linq;
 
 namespace BTL_WCB.G08.Auth
 {
@@ -8,15 +8,9 @@ namespace BTL_WCB.G08.Auth
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Khởi tạo danh sách người dùng nếu chưa có
-            if (Application["UserList"] == null)
+            if (Session["Username"] != null)
             {
-                var users = new List<UserAccount>
-                {
-                    new UserAccount { Username = "admin", Password = "123" },
-                    new UserAccount { Username = "user", Password = "123" }
-                };
-                Application["UserList"] = users;
+                Response.Redirect("../TrangChu.aspx");
             }
         }
 
@@ -24,25 +18,36 @@ namespace BTL_WCB.G08.Auth
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
-            var list = Application["UserList"] as List<UserAccount>;
 
-            if (list != null)
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                var user = list.Find(u => u.Username == username && u.Password == password);
-                if (user != null)
-                {
-                    Session["Username"] = user.Username;
-                    Response.Redirect("../TrangChu.aspx");
-                }
-                else
-                {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Sai tên đăng nhập hoặc mật khẩu!');", true);
-                }
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Vui lòng nhập đầy đủ thông tin.');", true);
+                return;
             }
+
+            List<NguoiDung> dsNguoiDung = Application["DsNguoiDung"] as List<NguoiDung>;
+
+            NguoiDung user = dsNguoiDung.FirstOrDefault(u => u.Username == username && u.Password == password);
+
+            if (user == null)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Tên đăng nhập hoặc mật khẩu không đúng.');", true);
+                return;
+            }
+
+            Session["Username"] = user.Username;
+            Session["Role"] = user.Role;
+
+            if (user.Role == "Admin")
+                Response.Redirect("../Admin/TrangQuanTri.aspx");
+            else
+                Response.Redirect("../TrangChu.aspx");
         }
+
+
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DangKy.aspx");
+            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Chức năng đăng ký chưa khả dụng.');", true);
         }
     }
 }

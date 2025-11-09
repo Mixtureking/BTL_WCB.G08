@@ -72,6 +72,7 @@
     <Content Include="css\styleTrangChu.css" />
     <Content Include="Auth\DangNhap.aspx" />
     <Content Include="Auth\DangKy.aspx" />
+    <Content Include="Auth\DangXuat.aspx" />
     <Content Include="DanhSachSuKien.aspx" />
     <Content Include="DanhSachSuKien.html" />
     <Content Include="GioiThieu.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="Auth\DangKy.aspx.designer.cs">
       <DependentUpon>DangKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\DangXuat.aspx.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\DangXuat.aspx.designer.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
     </Compile>
     <Compile Include="DanhSachSuKien.aspx.cs">
       <DependentUpon>DanhSachSuKien.aspx</DependentUpon>
