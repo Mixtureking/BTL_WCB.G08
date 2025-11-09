@@ -21,7 +21,7 @@
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
 
-        <main class="content-wrapper">
+    <main class="content-wrapper">
     <!-- Cột trái: Tin tức -->
     <section class="news-section">
         <h2>Tin tức</h2>

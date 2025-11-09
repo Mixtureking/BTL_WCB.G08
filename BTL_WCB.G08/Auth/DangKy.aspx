@@ -16,9 +16,9 @@
             <div class="logo">LOGO</div>
             <nav class="nav">
                 <a href="../TrangChu.aspx">Trang chủ</a>
-                <a href="DanhSachSuKien.aspx">Sự kiện</a>
-                <a href="GioiThieu.aspx">Giới thiệu</a>
-                <a href="DangNhap.aspx">Đăng nhập</a>
+                <a href="../DanhSachSuKien.aspx">Sự kiện</a>
+                <a href="../GioiThieu.aspx">Giới thiệu</a>
+                <a href="DangNhap.aspx" class="active">Đăng nhập</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>

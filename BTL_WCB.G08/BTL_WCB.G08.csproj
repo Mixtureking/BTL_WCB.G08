@@ -68,14 +68,17 @@
     <Content Include="css\styleDangKy.css" />
     <Content Include="css\styleDangNhap.css" />
     <Content Include="css\styleDanhSachSuKien.css" />
+    <Content Include="css\styleGioiThieu.css" />
     <Content Include="css\styleTrangChu.css" />
     <Content Include="Auth\DangNhap.aspx" />
     <Content Include="Auth\DangKy.aspx" />
     <Content Include="DanhSachSuKien.aspx" />
     <Content Include="DanhSachSuKien.html" />
+    <Content Include="GioiThieu.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\jsDangNhap.js" />
     <Content Include="js\jsDanhSachSuKien.js" />
+    <Content Include="js\jsGioiThieu.js" />
     <Content Include="js\jsTrangChu.js" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
@@ -101,6 +104,13 @@
     </Compile>
     <Compile Include="DanhSachSuKien.aspx.designer.cs">
       <DependentUpon>DanhSachSuKien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioiThieu.aspx.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioiThieu.aspx.designer.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

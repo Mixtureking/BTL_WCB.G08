@@ -51,4 +51,4 @@ function banner(index) {
     });
     dotItem[index].classList.add("active");
 }
-setInterval(imgSlide, 5000);// chuyển slide sau mỗi 5s
+setInterval(imgSlide, 10000);// chuyển slide sau mỗi 10s
