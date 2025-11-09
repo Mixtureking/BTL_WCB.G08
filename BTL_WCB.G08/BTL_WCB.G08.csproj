@@ -62,15 +62,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="css\styleDangKy.css" />
     <Content Include="css\styleDangNhap.css" />
     <Content Include="css\styleDanhSachSuKien.css" />
     <Content Include="css\styleTrangChu.css" />
     <Content Include="Auth\DangNhap.aspx" />
+    <Content Include="Auth\DangKy.aspx" />
     <Content Include="DanhSachSuKien.html" />
     <Content Include="Global.asax" />
     <Content Include="js\jsDangNhap.js" />
@@ -86,6 +83,13 @@
     </Compile>
     <Compile Include="Auth\DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\DangKy.aspx.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\DangKy.aspx.designer.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

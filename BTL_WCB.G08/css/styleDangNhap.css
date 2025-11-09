@@ -59,7 +59,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh);
+    height: 100vh;
 }
 
 .auth-box {
@@ -115,7 +115,20 @@ header {
     .btn:hover {
         background: #005ecb;
     }
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.btn + .btn {
+    margin-top: 10px;
+    background-color: #6c757d;
+}
 
+    .btn + .btn:hover {
+        background-color: #5a6268;
+    }
 footer {
     text-align: center;
     padding: 15px;

@@ -13,23 +13,20 @@
         <header>
             <div class="logo">LOGO</div>
             <nav class="nav">
-                <a href="../TrangChu.aspx" class="active">Trang chủ</a>
+                <a href="../TrangChu.aspx">Trang chủ</a>
                 <a href="DanhSachSuKien.aspx">Sự kiện</a>
                 <a href="GioiThieu.aspx">Giới thiệu</a>
-                <a href="DangNhap.aspx">Đăng nhập</a>
+                <a href="DangNhap.aspx" class="active">Đăng nhập</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
         <section class="auth-container">
             <div class="auth-box">
-                <div class="tabs">
-                    <div class="DangNhap">Đăng nhập</div>
-                </div>
-
                 <div id="loginForm" class="form active">
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="input" placeholder="Tên đăng nhập"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
                     <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" CssClass="btn" OnClick="btnLogin_Click" />
+                    <asp:Button ID="btnRegister" runat="server" Text="Đăng ký" CssClass="btn" OnClick="btnRegister_Click" />
                 </div>
             </div>
         </section>
