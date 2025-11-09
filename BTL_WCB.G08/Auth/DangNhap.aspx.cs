@@ -40,5 +40,9 @@ namespace BTL_WCB.G08.Auth
                 }
             }
         }
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DangKy.aspx");
+        }
     }
 }
