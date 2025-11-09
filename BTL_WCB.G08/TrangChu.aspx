@@ -12,13 +12,11 @@
     <form id="form1" runat="server">
 
         <header>
-            <div class="logo">
-                <img src="#" alt="Logo" />
-            </div>
+            <div class="logo">LOGO</div>
             <nav class="nav">
-                <a href="#" class="active">Trang chủ</a>
-                <a href="#">Sự kiện</a>
-                <a href="#">Giới thiệu</a>
+                <a href="TrangChu.aspx" class="active">Trang chủ</a>
+                <a href="DanhSachSuKien.aspx">Sự kiện</a>
+                <a href="GioiThieu.aspx">Giới thiệu</a>
                 <a href="Auth/DangNhap.aspx">Đăng nhập</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">☰</div>

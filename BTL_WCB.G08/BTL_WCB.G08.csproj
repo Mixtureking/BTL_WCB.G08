@@ -71,6 +71,7 @@
     <Content Include="css\styleTrangChu.css" />
     <Content Include="Auth\DangNhap.aspx" />
     <Content Include="Auth\DangKy.aspx" />
+    <Content Include="DanhSachSuKien.aspx" />
     <Content Include="DanhSachSuKien.html" />
     <Content Include="Global.asax" />
     <Content Include="js\jsDangNhap.js" />
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="Auth\DangKy.aspx.designer.cs">
       <DependentUpon>DangKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachSuKien.aspx.cs">
+      <DependentUpon>DanhSachSuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhSachSuKien.aspx.designer.cs">
+      <DependentUpon>DanhSachSuKien.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

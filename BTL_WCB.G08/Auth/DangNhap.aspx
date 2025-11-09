@@ -14,15 +14,17 @@
             <div class="logo">LOGO</div>
             <nav class="nav">
                 <a href="../TrangChu.aspx">Trang chủ</a>
-                <a href="DanhSachSuKien.aspx">Sự kiện</a>
+                <a href="../DanhSachSuKien.aspx">Sự kiện</a>
                 <a href="GioiThieu.aspx">Giới thiệu</a>
                 <a href="DangNhap.aspx" class="active">Đăng nhập</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
         <section class="auth-container">
+
             <div class="auth-box">
                 <div id="loginForm" class="form active">
+                    <h2>Đăng nhập</h2>
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="input" placeholder="Tên đăng nhập"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
                     <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" CssClass="btn" OnClick="btnLogin_Click" />
