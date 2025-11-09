@@ -12,7 +12,9 @@
     <form id="form1" runat="server">
 
         <header>
-            <div class="logo">LOGO</div>
+            <div class="logo">
+                <img src="#" alt="Logo" />
+            </div>
             <nav class="nav">
                 <a href="#" class="active">Trang chủ</a>
                 <a href="#">Sự kiện</a>
@@ -21,9 +23,20 @@
             </nav>
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
-
-        <section class="banner">
-            <h1>BANNER</h1>
+        
+        <section id="banner">
+            <div class="aspect-ratio-169">
+                <img src="#" alt="Banner 1" />
+                <img src="#" alt="Banner 2" />
+                <img src="#" alt="Banner 3" />
+            </div>
+            <button type="button" class="btn prev">&#10094;</button>
+            <button type="button" class="btn next">&#10095;</button>
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
         </section>
 
         <section class="events">
