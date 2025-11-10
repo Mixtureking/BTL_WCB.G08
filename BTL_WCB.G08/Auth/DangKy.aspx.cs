@@ -12,8 +12,22 @@ namespace BTL_WCB.G08.Auth
         protected void btnCreateAccount_Click(object sender, EventArgs e)
         {
             string username = txtNewUsername.Text.Trim();
+            string email = txtEmail.Text.Trim();
             string password = txtNewPassword.Text.Trim();
             string confirm = txtConfirmPassword.Text.Trim();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirm))
+            {
+                Response.Write("<script>alert('Vui lòng điền đầy đủ thông tin!');</script>");
+                return;
+            }
+
+            if (!email.Contains("@"))
+            {
+                Response.Write("<script>alert('Email không hợp lệ!');</script>");
+                return;
+            }
 
             if (password != confirm)
             {

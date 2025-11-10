@@ -29,6 +29,7 @@
                 <h2>Đăng ký tài khoản</h2>
 
                 <asp:TextBox ID="txtNewUsername" runat="server" CssClass="input" placeholder="Tên đăng nhập"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" CssClass="input" TextMode="Email" placeholder="Email"></asp:TextBox>
                 <asp:TextBox ID="txtNewPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
                 <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Nhập lại mật khẩu"></asp:TextBox>
 
