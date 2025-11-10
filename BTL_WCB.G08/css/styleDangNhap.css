@@ -6,22 +6,19 @@
 
 body {
     font-family: "Segoe UI", sans-serif;
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #333;
 }
-/*header đây*/
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    background-color: #f9f9f9;
+    background: rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid #ddd;
-}
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -32,6 +29,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav {
@@ -49,7 +52,7 @@ header {
             color: #007bff;
         }
 
-/*header*/
+/*^^^^^^ header ^^^^^^*/
 
 .DangNhap {
     margin: 0 auto;
@@ -163,7 +166,7 @@ footer {
         }
 
     .menu-toggle {
-        display: block;
+        display: flex;
     }
     .auth-box {
         width: 90%;

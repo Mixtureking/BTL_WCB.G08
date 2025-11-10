@@ -15,8 +15,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    background-color: #f9f9f9;
+    background: rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -27,6 +29,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav {
@@ -44,12 +52,6 @@ header {
             color: #007bff;
         }
 
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 #banner {
     overflow: hidden;
     position: relative;
@@ -61,7 +63,7 @@ header {
     display: block;
     position: relative;
     padding-top: 56.25%;
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
 }
 
     .aspect-ratio-169 img {

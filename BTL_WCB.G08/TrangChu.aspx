@@ -13,13 +13,13 @@
 
         <header>
             <div class="logo">LOGO</div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="nav">
                 <a href="TrangChu.aspx" class="active">Trang chủ</a>
                 <a href="DanhSachSuKien.aspx">Sự kiện</a>
                 <a href="GioiThieu.aspx">Giới thiệu</a>
                 <a href="Auth/DangNhap.aspx">Đăng nhập</a>
             </nav>
-            <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
         
         <section id="banner">

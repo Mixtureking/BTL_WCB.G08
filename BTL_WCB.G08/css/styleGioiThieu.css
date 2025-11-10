@@ -15,8 +15,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    background-color: #f9f9f9;
+    background: rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -27,6 +29,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav {
@@ -43,12 +51,6 @@ header {
         .nav a.active {
             color: #007bff;
         }
-
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
 
 .introduction {
     display: grid;

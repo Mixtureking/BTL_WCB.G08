@@ -19,6 +19,7 @@ header {
     padding: 12px 40px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ddd;
+    z-index: 1;
 }
 
 .logo {

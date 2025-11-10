@@ -5,11 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Giới thiệu</title>
-    <link href="css/styleGioiThieu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styleGioiThieu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header>
         <div class="logo">LOGO</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <nav class="nav">
             <a href="TrangChu.aspx">Trang chủ</a>
             <a href="DanhSachSuKien.aspx">Sự kiện</a>
@@ -22,7 +24,6 @@
                 | <a href="Auth/DangXuat.aspx">Đăng xuất</a>
             </asp:PlaceHolder>
         </nav>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
     <section class="introduction">
         <div class="main-content">
@@ -136,6 +137,6 @@
     <footer>
         <p>© 2025 - Trang sự kiện trường học</p>
     </footer>
-    <script src="jsGioiThieu.js"></script>
+    <script src="js/jsGioiThieu.js"></script>
 </body>
 </html>

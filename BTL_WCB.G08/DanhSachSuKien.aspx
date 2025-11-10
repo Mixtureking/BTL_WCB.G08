@@ -12,6 +12,7 @@
     <form id="form1" runat="server">
         <header>
             <div class="logo">LOGO</div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="nav">
                 <a href="TrangChu.aspx">Trang chủ</a>
                 <a href="DanhSachSuKien.aspx" class="active">Sự kiện</a>
@@ -24,7 +25,6 @@
                     | <a href="Auth/DangXuat.aspx">Đăng xuất</a>
                 </asp:PlaceHolder>
             </nav>
-            <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
 
         <main class="content-wrapper">
@@ -101,6 +101,6 @@
     <footer>
         <p>© 2025 - Trang sự kiện trường học</p>
     </footer>
-
+    <script src="js/jsDanhSachSuKien.js"></script>
 </body>
 </html>
