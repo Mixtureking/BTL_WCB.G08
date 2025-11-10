@@ -31,32 +31,33 @@
             <!-- Cột trái: Tin tức -->
             <section class="news-section">
                 <h2>Tin tức</h2>
-                <ul class="news-list">
-                    <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
-                        <div class="news-info">
-                            <p class="news-title">Hướng dẫn bình chọn cho Dự án Smart Wheel Chair tham gia VCK Cuộc thi SV STARTUP lần thứ V</p>
-                            <span class="news-date">02/03/2023</span>
-                            <button class="btn-view">Xem thêm</button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
-                        <div class="news-info">
-                            <p class="news-title">Thông báo triệu tập sinh viên tham dự Tuần sinh hoạt CDSV năm học 2017-2018 dành cho SV giữa khóa</p>
-                            <span class="news-date">23/01/2018</span>
-                            <button class="btn-view">Xem thêm</button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
-                        <div class="news-info">
-                            <p class="news-title">Thông báo quyết định và danh sách SV được nhận học bổng năm học 2016-2017</p>
-                            <span class="news-date">05/12/2017</span>
-                            <button class="btn-view">Xem thêm</button>
-                        </div>
-                    </li>
-                </ul>
+                <asp:Repeater ID="rptSuKien" runat="server">
+                    <HeaderTemplate>
+                        <ul class="news-list">
+                    </HeaderTemplate>
+
+                    <ItemTemplate>
+                        <li>
+                            <img src='<%# Eval("Anh") %>' alt="Ảnh sự kiện" />
+                            <div class="news-info">
+                                <p class="news-title"><%# Eval("Title") %></p>
+                                <span class="news-date"><%# ((DateTime)Eval("ThoiGian")).ToString("dd/MM/yyyy") %></span>
+                                <p class="news-desc"><%# Eval("MoTa") %></p>
+                                <button class="btn-view" onclick="window.location.href='ChiTietSuKien.aspx?id=<%# Eval("Id") %>'">Xem thêm</button>
+                            </div>
+                        </li>
+                    </ItemTemplate>
+
+                    <FooterTemplate>
+                        </ul>
+                    </FooterTemplate>
+                </asp:Repeater>
+                <asp:Panel ID="pnlPaging" runat="server" CssClass="paging">
+                    <asp:Button ID="btnPrev" runat="server" Text="&lt; Trước" OnClick="btnPrev_Click" CssClass="btn-page" />
+                    <asp:Label ID="lblPageInfo" runat="server" Text=""></asp:Label>
+                    <asp:Button ID="btnNext" runat="server" Text="Sau &gt;" OnClick="btnNext_Click" CssClass="btn-page" />
+                </asp:Panel>
+
             </section>
 
             <!-- Cột phải: Các mục bổ sung -->
