@@ -26,7 +26,7 @@
                     <h2>Đăng nhập</h2>
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="input" placeholder="Tên đăng nhập"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
-                    <a href="#">Quên mật khẩu?</a>
+                    <a href="QuenMatKhau.aspx">Quên mật khẩu?</a>
                     <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" CssClass="btn" OnClick="btnLogin_Click" />
                     <asp:Button ID="btnRegister" runat="server" Text="Đăng ký" CssClass="btn" OnClick="btnRegister_Click" />
                 </div>

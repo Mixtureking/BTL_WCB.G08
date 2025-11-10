@@ -65,6 +65,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Auth\QuenMatKhau.aspx" />
+    <Content Include="css\styleQuenMatKhau.css" />
     <Content Include="css\styleDangKy.css" />
     <Content Include="css\styleDangNhap.css" />
     <Content Include="css\styleDanhSachSuKien.css" />
@@ -105,6 +107,13 @@
     </Compile>
     <Compile Include="Auth\DangXuat.aspx.designer.cs">
       <DependentUpon>DangXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\QuenMatKhau.aspx.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\QuenMatKhau.aspx.designer.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
     </Compile>
     <Compile Include="DanhMucSuKien.cs" />
     <Compile Include="DanhSachSuKien.aspx.cs">
