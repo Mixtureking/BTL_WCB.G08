@@ -46,11 +46,11 @@
                         OnRowUpdating="gvDangKy_RowUpdating"
                         OnRowCancelingEdit="gvDangKy_RowCancelingEdit"
                         OnRowDeleting="gvDangKy_RowDeleting"
-                        DataKeyNames="Username">
+                        DataKeyNames="TenTaiKhoan">
 
                         <Columns>
                             <asp:BoundField DataField="HoTen" HeaderText="Họ tên" />
-                            <asp:BoundField DataField="Username" HeaderText="Tên tài khoản" ReadOnly="true" />
+                            <asp:BoundField DataField="TenTaiKhoan" HeaderText="Tên tài khoản" ReadOnly="true" />
                             <asp:BoundField DataField="SoDienThoai" HeaderText="Số điện thoại" />
                             <asp:BoundField DataField="TenSuKien" HeaderText="Tên sự kiện" />
                             <asp:TemplateField>

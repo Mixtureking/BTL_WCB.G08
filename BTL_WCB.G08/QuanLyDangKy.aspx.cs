@@ -36,7 +36,7 @@ namespace BTL_WCB.G08
                 tuKhoa = tuKhoa.ToLower();
                 ds = ds.Where(d =>
                     (!string.IsNullOrEmpty(d.HoTen) && d.HoTen.ToLower().Contains(tuKhoa)) ||
-                    (!string.IsNullOrEmpty(d.Username) && d.Username.ToLower().Contains(tuKhoa))
+                    (!string.IsNullOrEmpty(d.TenTaiKhoan) && d.TenTaiKhoan.ToLower().Contains(tuKhoa))
                 ).ToList();
             }
 
@@ -76,7 +76,7 @@ namespace BTL_WCB.G08
         protected void gvDangKy_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             string username = gvDangKy.DataKeys[e.RowIndex].Value.ToString();
-            var item = DanhSachDangKy.LayTatCa().FirstOrDefault(d => d.Username == username);
+            var item = DanhSachDangKy.LayTatCa().FirstOrDefault(d => d.TenTaiKhoan == username);
 
             if (item != null)
             {
@@ -93,7 +93,7 @@ namespace BTL_WCB.G08
         protected void gvDangKy_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             string username = gvDangKy.DataKeys[e.RowIndex].Value.ToString();
-            var item = DanhSachDangKy.LayTatCa().FirstOrDefault(d => d.Username == username);
+            var item = DanhSachDangKy.LayTatCa().FirstOrDefault(d => d.TenTaiKhoan == username);
 
             if (item != null)
             {

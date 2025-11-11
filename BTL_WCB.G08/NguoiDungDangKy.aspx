@@ -38,7 +38,7 @@
                         <Columns>
                             <asp:BoundField DataField="TenSuKien" HeaderText="Tên sự kiện" ItemStyle-CssClass="col-ten" />
                             <asp:BoundField DataField="HoTen" HeaderText="Họ tên" ItemStyle-CssClass="col-hoten" />
-                            <asp:BoundField DataField="TenTaiKhoan" HeaderText="Email" ItemStyle-CssClass="col-email" />
+                            <asp:BoundField DataField="Email" HeaderText="Email" ItemStyle-CssClass="col-email" />
                             <asp:BoundField DataField="SoDienThoai" HeaderText="Số điện thoại" ItemStyle-CssClass="col-sdt" />
                             <asp:TemplateField>
                                 <ItemTemplate>
