@@ -12,7 +12,9 @@
     <form id="form1" runat="server">
 
         <header>
-            <div class="logo">LOGO</div>
+            <div class="logo">
+                <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+            </div>
             <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="nav">
                 <a href="TrangChu.aspx" class="active">Trang chủ</a>
@@ -24,9 +26,9 @@
         
         <section id="banner">
             <div class="aspect-ratio-169">
-                <img src="#" alt="Banner 1" />
-                <img src="#" alt="Banner 2" />
-                <img src="#" alt="Banner 3" />
+                <img src="img/banner-1.jpg" alt="Banner 1" />
+                <img src="img/banner-2.jpg" alt="Banner 2" />
+                <img src="img/banner-3.jpg" alt="Banner 3" />
             </div>
             <button type="button" class="btn prev">&#10094;</button>
             <button type="button" class="btn next">&#10095;</button>
@@ -41,22 +43,52 @@
             <h2>SỰ KIỆN NỔI BẬT</h2>
             <div class="event-list">
                 <div class="event-card">
-                    <div class="event-img"></div>
-                    <h3>TÊN SỰ KIỆN</h3>
-                    <p>THỜI GIAN</p>
-                    <button type="button">XEM CHI TIẾT</button>
+                    <div class="event-img">
+                        <img src="img/event-1.jpg" alt="Event" />
+                    </div>
+                    <h3>Lễ hội âm nhạc mùa thu</h3>
+                    <p>📆 20/11/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=1"><button type="button">XEM CHI TIẾT</button></a>
                 </div>
                 <div class="event-card">
-                    <div class="event-img"></div>
-                    <h3>TÊN SỰ KIỆN</h3>
-                    <p>THỜI GIAN</p>
-                    <button type="button">XEM CHI TIẾT</button>
+                    <div class="event-img">
+                        <img src="img/event-2.jpg" alt="Event" />
+                    </div>
+                    <h3>Hội thảo Công nghệ AI 2025</h3>
+                    <p>📆 05/12/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=2"><button type="button">XEM CHI TIẾT</button></a>
                 </div>
                 <div class="event-card">
-                    <div class="event-img"></div>
-                    <h3>TÊN SỰ KIỆN</h3>
-                    <p>THỜI GIAN</p>
-                    <button type="button">XEM CHI TIẾT</button>
+                    <div class="event-img">
+                        <img src="img/event-3.jpg" alt="Event" />
+                    </div>
+                    <h3>Giải chạy từ thiện vì trẻ em</h3>
+                    <p>📆 15/12/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=3"><button type="button">XEM CHI TIẾT</button></a>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="img/event-4.jpg" alt="Event" />
+                    </div>
+                    <h3>Ngày hội việc làm 2025</h3>
+                    <p>📆 25/11/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=4"><button type="button">XEM CHI TIẾT</button></a>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="img/event-5.jpg" alt="Event" />
+                    </div>
+                    <h3>Workshop Kỹ năng mềm cho sinh viên</h3>
+                    <p>📆 28/11/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=5"><button type="button">XEM CHI TIẾT</button></a>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="img/event-6.jpg" alt="Event" />
+                    </div>
+                    <h3>Triển lãm công nghệ xanh</h3>
+                    <p>📆 10/12/2025</p>
+                    <a href="ChiTietSuKien.aspx?id=6"><button type="button">XEM CHI TIẾT</button></a>
                 </div>
             </div>
         </section>
