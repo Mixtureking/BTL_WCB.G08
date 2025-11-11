@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
         <header>
             <div class="logo">
-                <a href="TrangChu.aspx"><img src="../img/logo.png" alt="logo.png" /></a> 
+                <a href="../TrangChu.aspx"><img src="../img/logo.png" alt="logo.png" /></a> 
             </div>
             <nav class="nav">
                 <a href="../TrangChu.aspx">Trang chủ</a>
