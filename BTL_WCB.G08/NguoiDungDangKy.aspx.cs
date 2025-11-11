@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Web.UI.WebControls;
 using BTL_WCB.G08;
 
 namespace BTL_WCB.G08
@@ -27,6 +28,30 @@ namespace BTL_WCB.G08
                 {
                     phLogin.Visible = true;
                     phUser.Visible = false;
+                }
+            }
+        }
+        protected void gvDangKy_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Xoa")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                var danhSach = DanhSachDangKy.LayTatCa();
+                string username = Session["Username"]?.ToString();
+
+                var danhSachNguoiDung = danhSach
+                    .Where(dk => dk.Username == username)
+                    .ToList();
+
+                if (index >= 0 && index < danhSachNguoiDung.Count)
+                {
+                    var itemToRemove = danhSachNguoiDung[index];
+                    danhSach.Remove(itemToRemove);
+
+                    gvDangKy.DataSource = danhSach
+                        .Where(dk => dk.Username == username)
+                        .ToList();
+                    gvDangKy.DataBind();
                 }
             }
         }

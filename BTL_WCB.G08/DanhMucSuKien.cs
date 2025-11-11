@@ -7,10 +7,8 @@ namespace BTL_WCB.G08
 {
     public class DanhMucSuKien
     {
-        public static List<SuKien> LayTatCaSuKien()
+        private static List<SuKien> danhMucSuKien = new List<SuKien>
         {
-            return new List<SuKien>
-            {
                 new SuKien(1, "Lễ hội âm nhạc mùa thu",
                     "Sự kiện âm nhạc quy tụ nhiều nghệ sĩ nổi tiếng, diễn ra ngoài trời với không khí sôi động.",
                     @"Lễ hội diễn ra trong ba ngày liên tiếp với nhiều tiết mục hấp dẫn.
@@ -170,7 +168,35 @@ Kết thúc sự kiện bằng lễ tri ân và chụp ảnh lưu niệm.",
                     "img/noel_love.jpg",
                     new DateTime(2025, 12, 24, 19, 0, 0),
                     "Sân khấu ngoài trời - Cơ sở 2")
-            };
+
+        };
+        public static List<SuKien> LayTatCaSuKien()
+        {
+            return danhMucSuKien;
         }
+
+        public static void XoaSuKien(int id)
+        {
+            var suKien = danhMucSuKien.FirstOrDefault(s => s.Id == id);
+            if (suKien != null) danhMucSuKien.Remove(suKien);
+        }
+        public static void CapNhatSuKien(SuKien suKienMoi)
+        {
+            var suKienCu = danhMucSuKien.FirstOrDefault(s => s.Id == suKienMoi.Id);
+            if (suKienCu != null)
+            {
+                suKienCu.Title = suKienMoi.Title;
+                suKienCu.MoTa = suKienMoi.MoTa;
+                suKienCu.MoTaChiTiet = suKienMoi.MoTaChiTiet;
+                suKienCu.Anh = suKienMoi.Anh;
+                suKienCu.ThoiGian = suKienMoi.ThoiGian;
+                suKienCu.DiaDiem = suKienMoi.DiaDiem;
+            }
+        }
+        public static void ThemSuKien(SuKien suKien)
+        {
+            danhMucSuKien.Add(suKien);
+        }
+
     }
 }

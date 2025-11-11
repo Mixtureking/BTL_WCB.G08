@@ -70,15 +70,15 @@
                     <h3>Tuyển dụng</h3>
                     <ul>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Công ty Cổ phần Chứng khoán FPT tuyển Chuyên Viên Quản Trị Dữ Liệu Oracle</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Thông báo sinh viên tham gia tạo tài khoản trên Cổng thông tin việc làm của Nhà trường</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Thông tin doanh nghiệp tuyển dụng sinh viên tốt nghiệp</p>
                         </li>
                     </ul>

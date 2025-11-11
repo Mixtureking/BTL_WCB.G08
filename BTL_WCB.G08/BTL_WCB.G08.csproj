@@ -69,6 +69,7 @@
     <Content Include="ChiTietSuKien.aspx" />
     <Content Include="css\styleChiTietSuKien.css" />
     <Content Include="css\styleNguoiDungDangKy.css" />
+    <Content Include="css\styleQuanLySuKien.css" />
     <Content Include="css\styleQuenMatKhau.css" />
     <Content Include="css\styleDangKy.css" />
     <Content Include="css\styleDangNhap.css" />
@@ -88,6 +89,7 @@
     <Content Include="js\jsDanhSachSuKien.js" />
     <Content Include="js\jsGioiThieu.js" />
     <Content Include="js\jsTrangChu.js" />
+    <Content Include="QuanLySuKien.aspx" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -162,6 +164,13 @@
     </Compile>
     <Compile Include="NguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLySuKien.aspx.cs">
+      <DependentUpon>QuanLySuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLySuKien.aspx.designer.cs">
+      <DependentUpon>QuanLySuKien.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SuKien.cs" />
     <Compile Include="ThongTinDangKy.cs" />
     <Compile Include="TrangChu.aspx.cs">

@@ -32,12 +32,18 @@
             <main class="content-wrapper">
                 <section class="news-section">
                     <h2>Danh sách đăng ký của bạn</h2>
-                    <asp:GridView ID="gvDangKy" runat="server" AutoGenerateColumns="False" CssClass="gridview-style">
+                    <asp:GridView ID="gvDangKy" runat="server" AutoGenerateColumns="False" CssClass="gridview-style" OnRowCommand="gvDangKy_RowCommand">
                         <Columns>
-                            <asp:BoundField DataField="TenSuKien" HeaderText="Tên sự kiện" />
-                            <asp:BoundField DataField="HoTen" HeaderText="Họ tên" />
-                            <asp:BoundField DataField="TenTaiKhoan" HeaderText="Email" />
-                            <asp:BoundField DataField="SoDienThoai" HeaderText="Số điện thoại" />
+                            <asp:BoundField DataField="TenSuKien" HeaderText="Tên sự kiện" ItemStyle-CssClass="col-ten" />
+                            <asp:BoundField DataField="HoTen" HeaderText="Họ tên" ItemStyle-CssClass="col-hoten" />
+                            <asp:BoundField DataField="TenTaiKhoan" HeaderText="Email" ItemStyle-CssClass="col-email" />
+                            <asp:BoundField DataField="SoDienThoai" HeaderText="Số điện thoại" ItemStyle-CssClass="col-sdt" />
+                            <asp:TemplateField HeaderText="Thao tác">
+                                <ItemTemplate>
+                                    <asp:Button ID="btnXoa" runat="server" Text="Xóa" CommandName="Xoa" CommandArgument='<%# Container.DataItemIndex %>' CssClass="btn-page btn-xoa" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+
                         </Columns>
                     </asp:GridView>
                 </section>

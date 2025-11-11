@@ -254,7 +254,7 @@ footer {
     }
 
     .news-list li {
-        flex-direction: column; /* mobile: ảnh trên, nội dung dưới */
+        flex-direction: column; 
         align-items: flex-start;
     }
 

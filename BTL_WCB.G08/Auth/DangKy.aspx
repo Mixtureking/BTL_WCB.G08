@@ -10,8 +10,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-        <!-- ===== HEADER ===== -->
         <header>
             <div class="logo">LOGO</div>
             <nav class="nav">
@@ -23,7 +21,6 @@
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
 
-        <!-- ===== FORM ĐĂNG KÝ ===== -->
         <section class="auth-container">
             <div class="auth-box">
                 <h2>Đăng ký tài khoản</h2>
@@ -41,7 +38,6 @@
             </div>
         </section>
 
-        <!-- ===== FOOTER ===== -->
         <footer>
             <p>© 2025 - Trang sự kiện trường học</p>
         </footer>
