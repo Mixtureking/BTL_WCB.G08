@@ -12,6 +12,7 @@ namespace BTL_WCB.G08
         public string Username { get; set; }
         public string SoDienThoai { get; set; }
         public int IdSuKien { get; set; }
+        public string TenSuKien { get; set; }
 
     }
 }

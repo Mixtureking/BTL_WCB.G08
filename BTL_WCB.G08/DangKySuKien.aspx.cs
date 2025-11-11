@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Web.UI;
 
 namespace BTL_WCB.G08
@@ -11,7 +12,7 @@ namespace BTL_WCB.G08
             {
                 if (Session["Username"] != null)
                 {
-                    lblUsername.Text = Session["Username"].ToString();
+                    lnkUsername.Text = Session["Username"].ToString();
                     phLogin.Visible = false;
                     phUser.Visible = true;
                 }
@@ -32,6 +33,15 @@ namespace BTL_WCB.G08
                 }
             }
         }
+        protected void lnkUsername_Click(object sender, EventArgs e)
+        {
+            if (Session["Username"] != null)
+            {
+                string username = Session["Username"].ToString();
+                Response.Redirect("NguoiDungDangKy.aspx?username=" + username);
+            }
+        }
+
 
         protected void btnDangKy_Click(object sender, EventArgs e)
         {
@@ -50,19 +60,29 @@ namespace BTL_WCB.G08
             string idStr = Request.QueryString["id"];
             if (int.TryParse(idStr, out int idSuKien))
             {
-                var thongTin = new ThongTinDangKy
+                var suKien = DanhMucSuKien.LayTatCaSuKien().FirstOrDefault(sk => sk.Id == idSuKien);
+                if (suKien != null)
                 {
-                    TenTaiKhoan = email,
-                    HoTen = hoTen,
-                    Username = username,
-                    SoDienThoai = sdt,
-                    IdSuKien = idSuKien
-                };
+                    var thongTin = new ThongTinDangKy
+                    {
+                        TenTaiKhoan = email,
+                        HoTen = hoTen,
+                        Username = username,
+                        SoDienThoai = sdt,
+                        IdSuKien = idSuKien,
+                        TenSuKien = suKien.Title
+                    };
 
-                DanhSachDangKy.ThemDangKy(thongTin);
+                    DanhSachDangKy.ThemDangKy(thongTin);
 
-                lblThongBao.ForeColor = System.Drawing.Color.Green;
-                lblThongBao.Text = "Đăng ký thành công!";
+                    lblThongBao.ForeColor = System.Drawing.Color.Green;
+                    lblThongBao.Text = "Đăng ký thành công!";
+                }
+                else
+                {
+                    lblThongBao.ForeColor = System.Drawing.Color.Red;
+                    lblThongBao.Text = "Không tìm thấy sự kiện.";
+                }
             }
             else
             {
@@ -70,6 +90,5 @@ namespace BTL_WCB.G08
                 lblThongBao.Text = "ID sự kiện không hợp lệ.";
             }
         }
-
     }
 }

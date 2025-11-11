@@ -10,6 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="page-container">
         <header>
             <div class="logo">LOGO</div>
             <div class="menu-toggle" id="menu-toggle">☰</div>
@@ -21,7 +22,7 @@
                     <a href="Auth/DangNhap.aspx">Đăng nhập</a>
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="phUser" runat="server" Visible="false">
-                    <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+                    <asp:LinkButton ID="lnkUsername" runat="server" OnClick="lnkUsername_Click"></asp:LinkButton>
                     | <a href="Auth/DangXuat.aspx">Đăng xuất</a>
                 </asp:PlaceHolder>
             </nav>
@@ -66,6 +67,7 @@
         <footer>
             <p>© 2025 - Trang sự kiện trường học</p>
         </footer>
+            </div>
     </form>
 </body>
 </html>

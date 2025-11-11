@@ -1,13 +1,8 @@
-﻿* {
+﻿/* Reset & base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: "Segoe UI", sans-serif;
-    background-color: #fff;
-    color: #333;
 }
 html, body {
     height: 100%;
@@ -22,6 +17,13 @@ html, body {
 .content-wrapper {
     flex: 1;
 }
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -64,22 +66,75 @@ header {
             color: #007bff;
         }
 
-.introduction {
+/* Main layout */
+.content-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     padding: 20px 40px;
 }
 
-    .introduction h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
+/* Chi tiết sự kiện */
+.news-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.news-date,
+.news-location {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.news-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.news-desc {
+    font-size: 15px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.news-detail {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-page {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-page:hover {
+        background-color: #0056b3;
     }
 
-    .introduction li {
-        margin-left: 30px;
+.btn-dangky {
+    background-color: #28a745;
+}
+
+    .btn-dangky:hover {
+        background-color: #218838;
     }
 
+
+/* Sidebar */
 .sidebar-section {
     margin-bottom: 30px;
 }
@@ -114,12 +169,64 @@ header {
         font-size: 13px;
         line-height: 1.3;
     }
+/* Danh sách người dùng đăng ký - dạng bảng */
+.table-dangky {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
 
+    .table-dangky th,
+    .table-dangky td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .table-dangky th {
+        background-color: #007bff;
+        color: white;
+        font-weight: 600;
+    }
+
+    .table-dangky tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .table-dangky tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Responsive bảng */
+@media (max-width: 768px) {
+    .table-dangky {
+        font-size: 13px;
+    }
+
+        .table-dangky th,
+        .table-dangky td {
+            padding: 8px;
+        }
+}
+/* Footer */
 footer {
     text-align: center;
     padding: 15px;
     background: #f1f1f1;
     border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .news-image img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {

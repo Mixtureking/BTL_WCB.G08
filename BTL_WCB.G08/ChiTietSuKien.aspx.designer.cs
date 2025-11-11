@@ -42,13 +42,13 @@ namespace BTL_WCB.G08
         protected global::System.Web.UI.WebControls.PlaceHolder phUser;
 
         /// <summary>
-        /// lblUsername control.
+        /// lnkUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsername;
+        protected global::System.Web.UI.WebControls.LinkButton lnkUsername;
 
         /// <summary>
         /// pnlChiTiet control.

@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using BTL_WCB.G08;
 
 namespace BTL_WCB.G08
 {
-    public partial class GioiThieu : System.Web.UI.Page
+    public partial class NguoiDungDangKy : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +15,13 @@ namespace BTL_WCB.G08
                     lnkUsername.Text = Session["Username"].ToString();
                     phLogin.Visible = false;
                     phUser.Visible = true;
+
+                    var danhSach = DanhSachDangKy.LayTatCa()
+                        .Where(dk => dk.Username == Session["Username"].ToString())
+                        .ToList();
+
+                    gvDangKy.DataSource = danhSach;
+                    gvDangKy.DataBind();
                 }
                 else
                 {
@@ -26,10 +30,10 @@ namespace BTL_WCB.G08
                 }
             }
         }
+
         protected void lnkUsername_Click(object sender, EventArgs e)
         {
             Response.Redirect("NguoiDungDangKy.aspx");
         }
-
     }
 }

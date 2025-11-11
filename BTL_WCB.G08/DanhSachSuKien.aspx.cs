@@ -19,7 +19,7 @@ namespace BTL_WCB.G08
                 LoadData();
                 if (Session["Username"] != null)
                 {
-                    lblUsername.Text = Session["Username"].ToString();
+                    lnkUsername.Text = Session["Username"].ToString();
                     phLogin.Visible = false;
                     phUser.Visible = true;
                 }
@@ -59,5 +59,10 @@ namespace BTL_WCB.G08
             currentPage++;
             LoadData();
         }
+        protected void lnkUsername_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NguoiDungDangKy.aspx");
+        }
+
     }
 }

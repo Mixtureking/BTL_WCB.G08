@@ -11,7 +11,19 @@ body {
     display: flex;
     justify-content: center;
 }
+html, body {
+    height: 100%;
+}
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}
 .forgot-container {
     background: white;
     padding: 30px 40px;
