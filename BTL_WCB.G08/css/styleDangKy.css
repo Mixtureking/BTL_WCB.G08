@@ -240,4 +240,8 @@ header {
         width: 90%;
         padding: 30px;
     }
+
+    .footer-column {
+        width: 100%; /*chia thành 1 cột*/
+    }
 }

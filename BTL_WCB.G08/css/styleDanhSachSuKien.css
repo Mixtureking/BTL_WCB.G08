@@ -334,4 +334,8 @@ header {
         width: 100%;
         height: auto;
     }
+
+    .footer-column {
+        width: 48%; /*chia thành 2 cột*/
+    }
 }

@@ -237,6 +237,10 @@ header {
     .event-management {
         padding: 20px;
     }
+
+    .footer-column {
+        width: 48%; /*chia thành 2 cột*/
+    }
 }
 .add-event-form {
     display: flex;

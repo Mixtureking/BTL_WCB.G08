@@ -295,4 +295,8 @@ header {
     .event-card {
         width: calc(100% - 50px);
     }
+
+    .footer-column {
+        width: 48%; /*chia thành 2 cột*/
+    }
 }
