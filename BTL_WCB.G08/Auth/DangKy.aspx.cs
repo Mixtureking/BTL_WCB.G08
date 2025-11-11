@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web.UI;
 
 namespace BTL_WCB.G08.Auth
@@ -35,9 +36,26 @@ namespace BTL_WCB.G08.Auth
                 return;
             }
 
-            // TODO: Thêm logic lưu vào CSDL
-            Response.Write("<script>alert('Đăng ký thành công!');</script>");
-            Response.Redirect("DangNhap.aspx");
+            List<NguoiDung> dsNguoiDung = Application[Global.APPLICATION_ITEM_DS_NGUOIDUNG] as List<NguoiDung>;
+            if (dsNguoiDung == null)
+            {
+                dsNguoiDung = new List<NguoiDung>();
+            }
+
+            bool exists = dsNguoiDung.Exists(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            if (exists)
+            {
+                Response.Write("<script>alert('Tên đăng nhập đã tồn tại!');</script>");
+                return;
+            }
+            NguoiDung newUser = new NguoiDung(username, password);
+
+            Application.Lock();  
+            dsNguoiDung.Add(newUser);
+            Application[Global.APPLICATION_ITEM_DS_NGUOIDUNG] = dsNguoiDung;
+            Application.UnLock();
+
+            Response.Write("<script>alert('Đăng ký thành công! Hãy đăng nhập để tiếp tục.'); window.location='DangNhap.aspx';</script>");
         }
     }
 }
