@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Auth\QuenMatKhau.aspx" />
+    <Content Include="ChiTietSuKien.aspx" />
+    <Content Include="css\styleChiTietSuKien.css" />
     <Content Include="css\styleQuenMatKhau.css" />
     <Content Include="css\styleDangKy.css" />
     <Content Include="css\styleDangNhap.css" />
@@ -114,6 +116,13 @@
     </Compile>
     <Compile Include="Auth\QuenMatKhau.aspx.designer.cs">
       <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSuKien.aspx.cs">
+      <DependentUpon>ChiTietSuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSuKien.aspx.designer.cs">
+      <DependentUpon>ChiTietSuKien.aspx</DependentUpon>
     </Compile>
     <Compile Include="DanhMucSuKien.cs" />
     <Compile Include="DanhSachSuKien.aspx.cs">

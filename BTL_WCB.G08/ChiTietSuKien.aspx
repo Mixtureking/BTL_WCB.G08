@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DanhSachSuKien.aspx.cs" Inherits="BTL_WCB.G08.DanhSachSuKien" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ChiTietSuKien.aspx.cs" Inherits="BTL_WCB.G08.ChiTietSuKien" %>
 
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sự kiện</title>
-    <link rel="stylesheet" href="css/styleDanhSachSuKien.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sự kiện</title>
+    <link rel="stylesheet" href="css/styleChiTietSuKien.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,42 +28,21 @@
         </header>
 
         <main class="content-wrapper">
-            <!-- Cột trái: Tin tức -->
             <section class="news-section">
-                <h2>Tin tức</h2>
-                <asp:Repeater ID="rptSuKien" runat="server">
-                    <HeaderTemplate>
-                        <ul class="news-list">
-                    </HeaderTemplate>
-
-                    <ItemTemplate>
-                        <li>
-                            <img src='<%# Eval("Anh") %>' alt="Ảnh sự kiện" />
-                            <div class="news-info">
-                                <p class="news-title"><%# Eval("Title") %></p>
-                                <span class="news-date"><%# ((DateTime)Eval("ThoiGian")).ToString("dd/MM/yyyy") %></span>
-                                <p class="news-desc"><%# Eval("MoTa") %></p>
-                                <button type="button" class="btn-view"
-                                    onclick='<%# "window.location.href=\"ChiTietSuKien.aspx?id=" + Eval("Id") + "\";" %>'>
-                                    Xem thêm
-                                </button>
-                            </div>
-                        </li>
-                    </ItemTemplate>
-
-                    <FooterTemplate>
-                        </ul>
-                    </FooterTemplate>
-                </asp:Repeater>
-                <asp:Panel ID="pnlPaging" runat="server" CssClass="paging">
-                    <asp:Button ID="btnPrev" runat="server" Text="&lt; Trước" OnClick="btnPrev_Click" CssClass="btn-page" />
-                    <asp:Label ID="lblPageInfo" runat="server" Text=""></asp:Label>
-                    <asp:Button ID="btnNext" runat="server" Text="Sau &gt;" OnClick="btnNext_Click" CssClass="btn-page" />
+                <asp:Panel ID="pnlChiTiet" runat="server">
+                    <h2><asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></h2>
+                    <span class="news-date"><asp:Label ID="lblThoiGian" runat="server" Text=""></asp:Label></span>
+                    <span class="news-location"><asp:Label ID="lblDiaDiem" runat="server" Text=""></asp:Label></span>
+                    <div class="news-image">
+                        <asp:Image ID="imgAnh" runat="server" />
+                    </div>
+                    <p class="news-desc"><asp:Label ID="lblMoTa" runat="server" Text=""></asp:Label></p>
+                    <p class="news-detail"><asp:Label ID="lblMoTaChiTiet" runat="server" Text=""></asp:Label></p>
+                    <asp:Button ID="btnBack" runat="server" Text="← Quay lại" OnClick="btnBack_Click" CssClass="btn-page" />
                 </asp:Panel>
-
+                <asp:Label ID="lblError" runat="server" ForeColor="red" Text=""></asp:Label>
             </section>
 
-            <!-- Cột phải: Các mục bổ sung -->
             <aside class="sidebar">
                 <div class="sidebar-section">
                     <h3>Tuyển dụng</h3>
@@ -99,11 +78,9 @@
             </aside>
         </main>
 
+        <footer>
+            <p>© 2025 - Trang sự kiện trường học</p>
+        </footer>
     </form>
-
-    <footer>
-        <p>© 2025 - Trang sự kiện trường học</p>
-    </footer>
-    <script src="js/jsDanhSachSuKien.js"></script>
 </body>
 </html>
