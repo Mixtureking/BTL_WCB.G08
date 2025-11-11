@@ -12,6 +12,24 @@ namespace BTL_WCB.G08
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                if (Session["Username"] != null)
+                {
+                    lnkUsername.Text = Session["Username"].ToString();
+                    phLogin.Visible = false;
+                    phUser.Visible = true;
+                }
+                else
+                {
+                    phLogin.Visible = true;
+                    phUser.Visible = false;
+                }
+            }
+        }
+        protected void lnkUsername_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NguoiDungDangKy.aspx");
         }
     }
 }

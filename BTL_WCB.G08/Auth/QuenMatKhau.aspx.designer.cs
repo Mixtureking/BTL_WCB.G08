@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BTL_WCB.G08
+namespace BTL_WCB.G08.Auth
 {
 
 
-    public partial class TrangChu
+    public partial class QuenMatKhau
     {
 
         /// <summary>
@@ -24,30 +24,30 @@ namespace BTL_WCB.G08
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// phLogin control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phLogin;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// phUser control.
+        /// btnReset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phUser;
+        protected global::System.Web.UI.WebControls.Button btnReset;
 
         /// <summary>
-        /// lnkUsername control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkUsername;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
     }
 }
