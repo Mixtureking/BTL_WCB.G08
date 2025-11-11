@@ -18,7 +18,7 @@ namespace BTL_WCB.G08
                     phUser.Visible = true;
 
                     var danhSach = DanhSachDangKy.LayTatCa()
-                        .Where(dk => dk.Username == Session["Username"].ToString())
+                        .Where(dk => dk.TenTaiKhoan == Session["Username"].ToString())
                         .ToList();
 
                     gvDangKy.DataSource = danhSach;
@@ -40,7 +40,7 @@ namespace BTL_WCB.G08
                 string username = Session["Username"]?.ToString();
 
                 var danhSachNguoiDung = danhSach
-                    .Where(dk => dk.Username == username)
+                    .Where(dk => dk.TenTaiKhoan == username)
                     .ToList();
 
                 if (index >= 0 && index < danhSachNguoiDung.Count)
@@ -49,7 +49,7 @@ namespace BTL_WCB.G08
                     danhSach.Remove(itemToRemove);
 
                     gvDangKy.DataSource = danhSach
-                        .Where(dk => dk.Username == username)
+                        .Where(dk => dk.TenTaiKhoan == username)
                         .ToList();
                     gvDangKy.DataBind();
                 }

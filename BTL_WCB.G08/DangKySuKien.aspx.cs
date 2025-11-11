@@ -65,9 +65,9 @@ namespace BTL_WCB.G08
                 {
                     var thongTin = new ThongTinDangKy
                     {
-                        TenTaiKhoan = email,
+                        TenTaiKhoan = username,
                         HoTen = hoTen,
-                        Username = username,
+                        Email = email,
                         SoDienThoai = sdt,
                         IdSuKien = idSuKien,
                         TenSuKien = suKien.Title
