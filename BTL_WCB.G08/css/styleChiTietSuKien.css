@@ -112,6 +112,14 @@ header {
     .btn-page:hover {
         background-color: #0056b3;
     }
+.btn-dangky {
+    background-color: #28a745;
+}
+
+    .btn-dangky:hover {
+        background-color: #218838;
+    }
+
 
 /* Sidebar */
 .sidebar-section {

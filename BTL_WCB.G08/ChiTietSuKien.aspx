@@ -39,6 +39,7 @@
                     <p class="news-desc"><asp:Label ID="lblMoTa" runat="server" Text=""></asp:Label></p>
                     <p class="news-detail"><asp:Label ID="lblMoTaChiTiet" runat="server" Text=""></asp:Label></p>
                     <asp:Button ID="btnBack" runat="server" Text="← Quay lại" OnClick="btnBack_Click" CssClass="btn-page" />
+                    <asp:Button ID="btnDangKy" runat="server" Text="Đăng ký sự kiện" OnClick="btnDangKy_Click" CssClass="btn-page" />
                 </asp:Panel>
                 <asp:Label ID="lblError" runat="server" ForeColor="red" Text=""></asp:Label>
             </section>

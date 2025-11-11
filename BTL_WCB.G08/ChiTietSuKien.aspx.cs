@@ -63,5 +63,23 @@ namespace BTL_WCB.G08
         {
             Response.Redirect("DanhSachSuKien.aspx");
         }
+        protected void btnDangKy_Click(object sender, EventArgs e)
+        {
+            if (Session["Username"] == null)
+            {
+                // Nếu chưa đăng nhập, chuyển hướng đến trang đăng nhập
+                Response.Redirect("Auth/DangNhap.aspx");
+            }
+            else
+            {
+                string idStr = Request.QueryString["id"];
+                if (!string.IsNullOrEmpty(idStr))
+                {
+                    // Chuyển hướng đến trang đăng ký với ID sự kiện
+                    Response.Redirect($"DangKySuKien.aspx?id={idStr}");
+                }
+            }
+        }
+
     }
 }
