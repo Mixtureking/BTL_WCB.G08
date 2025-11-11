@@ -10,6 +10,7 @@ namespace BTL_WCB.G08
         {
             if (!IsPostBack)
             {
+
                 if (Session["Username"] != null)
                 {
                     lblUsername.Text = Session["Username"].ToString();
@@ -22,7 +23,6 @@ namespace BTL_WCB.G08
                     phUser.Visible = false;
                 }
                 pnlChiTiet.Visible = true;
-                lblError.Text = "";
 
                 string idStr = Request.QueryString["id"];
                 if (!string.IsNullOrEmpty(idStr) && int.TryParse(idStr, out int id))
@@ -36,9 +36,11 @@ namespace BTL_WCB.G08
                         lblDiaDiem.Text = suKien.DiaDiem;
                         imgAnh.ImageUrl = suKien.Anh;
                         lblMoTa.Text = suKien.MoTa;
-                        lblMoTaChiTiet.Text = suKien.MoTaChiTiet != null
-                        ? suKien.MoTaChiTiet.Replace(Environment.NewLine, "<br />")
-                        : "";
+                        string moTaChiTiet = suKien.MoTaChiTiet ?? "";
+                        lblMoTaChiTiet.Text = moTaChiTiet.Replace("\r\n", "<br />")
+                                                         .Replace("\n", "<br />")
+                                                         .Replace("\r", "<br />");
+
 
                     }
                     else
