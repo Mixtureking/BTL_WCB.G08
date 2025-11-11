@@ -11,7 +11,9 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <div class="logo">LOGO</div>
+            <div class="logo">
+                <a href="TrangChu.aspx"><img src="../img/logo.png" alt="logo.png" /></a> 
+            </div>
             <nav class="nav">
                 <a href="../TrangChu.aspx">Trang chủ</a>
                 <a href="../DanhSachSuKien.aspx">Sự kiện</a>
@@ -26,7 +28,7 @@
                     <h2>Đăng nhập</h2>
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="input" placeholder="Tên đăng nhập"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" placeholder="Mật khẩu"></asp:TextBox>
-                    <a href="QuenMatKhau.aspx">Quên mật khẩu?</a>
+                    <!--<a href="QuenMatKhau.aspx">Quên mật khẩu?</a>-->
                     <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" CssClass="btn" OnClick="btnLogin_Click" />
                     <asp:Button ID="btnRegister" runat="server" Text="Đăng ký" CssClass="btn" OnClick="btnRegister_Click" />
                 </div>
