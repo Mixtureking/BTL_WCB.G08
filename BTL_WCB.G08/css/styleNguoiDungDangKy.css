@@ -36,14 +36,14 @@ header {
 }
 
 .logo {
-    font-weight: bold;
-    background: #ccc;
-    width: 60px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: auto;
 }
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
 
 .menu-toggle {
     display: none;

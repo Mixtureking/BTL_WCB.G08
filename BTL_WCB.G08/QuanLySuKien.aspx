@@ -16,7 +16,8 @@
                 </div>
                 <div class="menu-toggle" id="menu-toggle">☰</div>
                 <nav class="nav">
-                    <a href="QuanLySuKien.aspx">Sự kiện</a>
+                    <a href="QuanLySuKien.aspx" class="active">Sự kiện</a>
+                    <a href="QuanLyDangKy.aspx">Đăng ký</a>
                     <asp:PlaceHolder ID="phLogin" runat="server">
                         <a href="Auth/DangNhap.aspx">Đăng nhập</a>
                     </asp:PlaceHolder>

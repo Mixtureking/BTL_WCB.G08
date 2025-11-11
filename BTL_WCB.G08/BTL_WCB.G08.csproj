@@ -88,6 +88,7 @@
     <Content Include="js\jsDanhSachSuKien.js" />
     <Content Include="js\jsGioiThieu.js" />
     <Content Include="js\jsTrangChu.js" />
+    <Content Include="QuanLyDangKy.aspx" />
     <Content Include="QuanLySuKien.aspx" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
@@ -156,6 +157,13 @@
     </Compile>
     <Compile Include="NguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyDangKy.aspx.cs">
+      <DependentUpon>QuanLyDangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyDangKy.aspx.designer.cs">
+      <DependentUpon>QuanLyDangKy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="QuanLySuKien.aspx.cs">
       <DependentUpon>QuanLySuKien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

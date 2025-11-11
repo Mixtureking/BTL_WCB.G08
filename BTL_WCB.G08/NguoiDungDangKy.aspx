@@ -13,7 +13,9 @@
         <div class="page-container">
 
             <header>
-                <div class="logo">LOGO</div>
+                <div class="logo">
+                <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+            </div>
                 <div class="menu-toggle" id="menu-toggle">☰</div>
                 <nav class="nav">
                     <a href="TrangChu.aspx">Trang chủ</a>
@@ -38,11 +40,15 @@
                             <asp:BoundField DataField="HoTen" HeaderText="Họ tên" ItemStyle-CssClass="col-hoten" />
                             <asp:BoundField DataField="TenTaiKhoan" HeaderText="Email" ItemStyle-CssClass="col-email" />
                             <asp:BoundField DataField="SoDienThoai" HeaderText="Số điện thoại" ItemStyle-CssClass="col-sdt" />
-                            <asp:TemplateField HeaderText="Thao tác">
+                            <asp:TemplateField>
                                 <ItemTemplate>
-                                    <asp:Button ID="btnXoa" runat="server" Text="Xóa" CommandName="Xoa" CommandArgument='<%# Container.DataItemIndex %>' CssClass="btn-page btn-xoa" />
+                                    <asp:Button ID="btnDelete" runat="server" Text="Xóa" CommandName="Xoa"
+                                        CommandArgument="<%# Container.DataItemIndex %>"
+                                        CssClass="btn-xoa"
+                                        OnClientClick="return confirm('Bạn có chắc chắn muốn hủy đăng ký sự kiện này?');" />
                                 </ItemTemplate>
                             </asp:TemplateField>
+
 
                         </Columns>
                     </asp:GridView>
@@ -54,6 +60,6 @@
             </footer>
         </div>
     </form>
-        <script src="js/jsTrangChu.js"></script>
+    <script src="js/jsTrangChu.js"></script>
 </body>
 </html>
