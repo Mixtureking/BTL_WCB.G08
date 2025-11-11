@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="vi">
-<head runat="server">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ - Sự kiện</title>
@@ -10,7 +10,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
         <header>
             <div class="logo">
                 <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
@@ -20,7 +19,13 @@
                 <a href="TrangChu.aspx" class="active">Trang chủ</a>
                 <a href="DanhSachSuKien.aspx">Sự kiện</a>
                 <a href="GioiThieu.aspx">Giới thiệu</a>
-                <a href="Auth/DangNhap.aspx">Đăng nhập</a>
+                <asp:PlaceHolder ID="phLogin" runat="server">
+                    <a href="Auth/DangNhap.aspx">Đăng nhập</a>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="phUser" runat="server" Visible="false">
+                    <asp:LinkButton ID="lnkUsername" runat="server" OnClick="lnkUsername_Click"></asp:LinkButton>
+                    | <a href="Auth/DangXuat.aspx">Đăng xuất</a>
+                </asp:PlaceHolder>
             </nav>
         </header>
         

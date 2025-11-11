@@ -13,7 +13,6 @@ namespace BTL_WCB.G08
         private const int pageSize = 6;
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
                 LoadData();

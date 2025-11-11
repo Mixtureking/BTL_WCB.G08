@@ -39,7 +39,7 @@ namespace BTL_WCB.G08.Auth
             Session["Role"] = user.Role;
 
             if (user.Role == "Admin")
-                Response.Redirect("../Admin/TrangQuanTri.aspx");
+                Response.Redirect("../QuanLySuKien.aspx");
             else
                 Response.Redirect("../TrangChu.aspx");
         }
