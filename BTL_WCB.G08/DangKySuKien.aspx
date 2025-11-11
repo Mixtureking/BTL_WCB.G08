@@ -54,11 +54,11 @@
                     <h3>Hướng dẫn</h3>
                     <ul>
                         <li>
-                            <img src="img/Doro_shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Điền đầy đủ thông tin cá nhân để đăng ký sự kiện</p>
                         </li>
                         <li>
-                            <img src="img/Doro_shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Kiểm tra email để xác nhận đăng ký</p>
                         </li>
                     </ul>

@@ -11,6 +11,7 @@ namespace BTL_WCB.G08
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 if (Session["Username"] != null)
