@@ -54,5 +54,6 @@
             </footer>
         </div>
     </form>
+        <script src="js/jsTrangChu.js"></script>
 </body>
 </html>

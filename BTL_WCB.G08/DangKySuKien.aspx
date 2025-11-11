@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng ký sự kiện</title>
-    <link rel="stylesheet" href="css/styleChiTietSuKien.css" />
+    <link rel="stylesheet" href="css/styleDangKySuKien.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -54,11 +54,11 @@
                     <h3>Hướng dẫn</h3>
                     <ul>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Điền đầy đủ thông tin cá nhân để đăng ký sự kiện</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Kiểm tra email để xác nhận đăng ký</p>
                         </li>
                     </ul>
@@ -71,5 +71,6 @@
         </footer>
             </div>
     </form>
+        <script src="js/jsTrangChu.js"></script>
 </body>
 </html>

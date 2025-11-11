@@ -28,7 +28,7 @@ namespace BTL_WCB.G08
         }
         protected void lnkUsername_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ThongTinNguoiDung.aspx");
+            Response.Redirect("NguoiDungDangKy.aspx");
         }
     }
 }
