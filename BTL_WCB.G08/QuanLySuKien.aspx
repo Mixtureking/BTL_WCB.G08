@@ -11,7 +11,9 @@
     <form id="form1" runat="server">
         <div class="page-container">
             <header>
-                <div class="logo">LOGO</div>
+                <div class="logo">
+                    <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+                </div>
                 <div class="menu-toggle" id="menu-toggle">☰</div>
                 <nav class="nav">
                     <a href="QuanLySuKien.aspx">Sự kiện</a>
