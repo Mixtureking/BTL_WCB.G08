@@ -82,8 +82,56 @@
             </aside>
         </main>
 
-        <footer>
-            <p>© 2025 - Trang sự kiện trường học</p>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+
+                    <div class="footer-column about-us">
+                        <h4>Về BTL Web Cơ Bản</h4>
+                        <p>Đây là dự án Bài Tập Lớn môn Web Cơ Bản (WCB.G08). Ứng dụng quản lý thông tin cơ 
+                            bản.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/fithou.edu.vn"><img src="img/facebook.png" alt="Facebook" /></a>
+                            <a href="https://www.youtube.com/c/Truy%E1%BB%81nTh%C3%B4ngHou"><img src="img/youtube.png" alt="Youtube" /></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column quick-links">
+                        <h4>Liên kết nhanh</h4>
+                        <ul>
+                            <li><a href="TrangChu.aspx">Trang Chủ</a></li>
+                            <li><a href="DanhSachSuKien.aspx">Sự Kiện</a></li>
+                            <li><a href="GioiThieu.aspx">Giới Thiệu</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer-column support-info">
+                        <h4>Hỗ trợ</h4>
+                        <ul>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Câu hỏi thường gặp (FAQ)</a></li>
+                            <li><a href="#">Hướng dẫn sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column contact-us">
+                        <h4>Thông tin nhóm</h4>
+                        <p>
+                            <strong>Môn học:</strong> Web Cơ Bản (WCB)<br>
+                            <strong>Nhóm:</strong> G08<br>
+                            <strong>Khoa:</strong> Công nghệ Thông tin<br>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2025 BTL WCB.G08. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
             </div>
     </form>
