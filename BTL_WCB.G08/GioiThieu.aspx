@@ -11,7 +11,9 @@
 <body>
     <div class="page-container">
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+        </div>
         <div class="menu-toggle" id="menu-toggle">☰</div>
         <nav class="nav">
             <a href="TrangChu.aspx">Trang chủ</a>
@@ -83,21 +85,21 @@
                 <h3>Tiêu điểm</h3>
                 <ul>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>
                             Giảng viên và sinh viên khoa Công nghệ Thông tin tham dự Lễ Khai giảng năm 
                             học mới 2025–2026
                         </p>
                     </li>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>
                             Giảng viên Trường ĐH Mở Hà Nội hoàn thành chương trình tập huấn năm 2023 
                             của UNESCO-UNITWIN: Nâng cao năng lực kỹ thuật số
                         </p>
                     </li>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Tổng kết Hội nghị Sinh viên NCKH năm học 2022-2023</p>
                     </li>
                 </ul>
@@ -106,15 +108,15 @@
                 <h3>Tuyển dụng</h3>
                 <ul>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Công ty Cổ phần Chứng khoán FPT tuyển Chuyên Viên Quản Trị Dữ Liệu Oracle</p>
                     </li>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Thông báo sinh viên tham gia tạo tài khoản trên Cổng thông tin việc làm của Nhà trường</p>
                     </li>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Thông tin doanh nghiệp tuyển dụng sinh viên tốt nghiệp</p>
                     </li>
                 </ul>
@@ -124,11 +126,11 @@
                 <h3>Quy định, biểu mẫu</h3>
                 <ul>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Quyết định số 2280/QĐ-ĐHM ngày 16/6/2025 về mức thu học phí 2025-2026</p>
                     </li>
                     <li>
-                        <img src="img/Doro-shutup.png" alt="FIT HOU">
+                        <img src="img/logo-fithou.jpg" alt="FIT HOU">
                         <p>Quy chế đào tạo trình độ Đại học của Trường ĐH Mở Hà Nội (theo Quyết định số 1818/QĐ-ĐHM ngày 10/05/2024)</p>
                     </li>
                 </ul>

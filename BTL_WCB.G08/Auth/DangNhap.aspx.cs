@@ -47,7 +47,7 @@ namespace BTL_WCB.G08.Auth
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Chức năng đăng ký chưa khả dụng.');", true);
+            Response.Redirect("DangKy.aspx");
         }
     }
 }

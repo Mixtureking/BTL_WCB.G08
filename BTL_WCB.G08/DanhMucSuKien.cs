@@ -23,7 +23,7 @@ Các trò chơi âm nhạc với nhiều giải thưởng thú vị.
 Hệ thống âm thanh và ánh sáng chuyên nghiệp được chuẩn bị sẵn.
 Nhân viên an ninh giám sát 24/24 để đảm bảo trật tự.
 Sự kiện được tài trợ bởi nhiều thương hiệu lớn, mang đến nhiều trải nghiệm đặc sắc.",
-                    "images/lehoi_amnhac.jpg",
+                    "img/event-1.jpg",
                     new DateTime(2025, 11, 20, 18, 0, 0),
                     "Nhà hát lớn Hà Nội"),
 
@@ -39,7 +39,7 @@ Tài liệu và tài nguyên miễn phí được cung cấp cho người tham d
 Cuối ngày sẽ có buổi networking giao lưu giữa các thành viên.
 Tọa đàm về đạo đức AI trong phát triển công nghệ hiện đại.
 Nhiều phần quà hấp dẫn từ các nhà tài trợ được trao tặng.",
-                    "images/hoithao_ai.jpg",
+                    "img/event-2.jpg",
                     new DateTime(2025, 12, 5, 9, 0, 0),
                     "Đại học Bách Khoa Hà Nội"),
 
@@ -55,7 +55,7 @@ Các tình nguyện viên hỗ trợ hướng dẫn đường chạy.
 Mỗi đội sẽ có nhóm leader để giám sát và hỗ trợ.
 Sự kiện nhận được tài trợ từ nhiều tổ chức và doanh nghiệp.
 Hoạt động kết thúc bằng buổi lễ trao quà và cảm ơn người tham gia.",
-                    "images/charity_run.jpg",
+                    "img/event-3.jpg",
                     new DateTime(2025, 12, 15, 7, 0, 0),
                     "Công viên Yên Sở"),
 
@@ -71,7 +71,7 @@ Người tham dự nhận được tài liệu hướng dẫn và quà lưu ni�
 Có buổi talkshow chia sẻ kinh nghiệm thành công trong nghề nghiệp.
 Nhân viên tư vấn hỗ trợ hướng dẫn các bước ứng tuyển.
 Sự kiện được tổ chức đảm bảo an ninh và trật tự.",
-                    "img/job_fair.jpg",
+                    "img/event-4.jpg",
                     new DateTime(2025, 11, 25, 8, 30, 0),
                     "Trường Đại học Mở Hà Nội"),
 
@@ -87,7 +87,7 @@ Người tham gia được chia nhóm để thực hành kỹ năng.
 Nhận xét và feedback từ giảng viên hướng dẫn.
 Kết thúc workshop có phần tổng kết và chứng nhận.
 Hoạt động tổ chức trong phòng hội thảo đầy đủ tiện nghi.",
-                    "img/workshop_softskills.jpg",
+                    "img/event-5.jpg",
                     new DateTime(2025, 11, 28, 14, 0, 0),
                     "Phòng hội thảo A2 - Cơ sở chính"),
 
@@ -103,7 +103,7 @@ Người tham dự nhận tài liệu hướng dẫn về công nghệ xanh.
 Ban tổ chức hỗ trợ thảo luận và hỏi đáp.
 Cuối triển lãm trao giải cho các dự án xuất sắc.
 Sự kiện nhận tài trợ từ nhiều doanh nghiệp xanh.",
-                    "img/green_tech.jpg",
+                    "img/event-6.jpg",
                     new DateTime(2025, 12, 10, 10, 0, 0),
                     "Sảnh tầng 1 - Trung tâm Triển lãm"),
 
@@ -119,7 +119,7 @@ Ban tổ chức chuẩn bị màn biểu diễn văn hóa đặc sắc.
 Sinh viên trình diễn các tiết mục nghệ thuật của nước mình.
 Có phần trao giải và chứng nhận cho các nhóm xuất sắc.
 Kết thúc chương trình bằng lễ cảm ơn và chụp ảnh lưu niệm.",
-                    "img/international_exchange.jpg",
+                    "img/event-1.jpg",
                     new DateTime(2026, 1, 5, 9, 0, 0),
                     "Hội trường lớn"),
 
@@ -135,7 +135,7 @@ Có phần thuyết trình trực tiếp và phản hồi từ giám khảo.
 Trao giải cho các hạng mục xuất sắc và sáng tạo.
 Người tham dự được nhận chứng nhận tham gia.
 Sự kiện được tài trợ bởi các công ty thiết kế nổi tiếng.",
-                    "img/graphic_design.jpg",
+                    "img/event-1.jpg",
                     new DateTime(2025, 12, 18, 13, 30, 0),
                     "Phòng máy A305"),
 
@@ -151,7 +151,7 @@ Có phần giao lưu và chụp ảnh tập thể.
 Một số khách mời đặc biệt phát biểu và chia sẻ.
 Nhân viên hỗ trợ đảm bảo an ninh và hướng dẫn khách.
 Kết thúc bằng màn trình diễn nghệ thuật đặc sắc.",
-                    "img/it_anniversary.jpg",
+                    "img/event-1.jpg",
                     new DateTime(2025, 11, 30, 18, 0, 0),
                     "Hội trường B1"),
 
@@ -167,7 +167,7 @@ Các tình nguyện viên hỗ trợ hướng dẫn khách tham dự.
 Chương trình kết hợp phần đấu giá gây quỹ từ thiện.
 Người tham dự nhận tài liệu thông tin về chương trình và nhà tài trợ.
 Kết thúc sự kiện bằng lễ tri ân và chụp ảnh lưu niệm.",
-                    "img/noel_love.jpg",
+                    "img/event-1.jpg",
                     new DateTime(2025, 12, 24, 19, 0, 0),
                     "Sân khấu ngoài trời - Cơ sở 2")
             };

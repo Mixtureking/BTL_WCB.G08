@@ -12,7 +12,9 @@
     <form id="form1" runat="server">
         <div class="page-container">
         <header>
-            <div class="logo">LOGO</div>
+            <div class="logo">
+                <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+            </div>
             <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="nav">
                 <a href="TrangChu.aspx">Trang chủ</a>
@@ -70,15 +72,15 @@
                     <h3>Tuyển dụng</h3>
                     <ul>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Công ty Cổ phần Chứng khoán FPT tuyển Chuyên Viên Quản Trị Dữ Liệu Oracle</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Thông báo sinh viên tham gia tạo tài khoản trên Cổng thông tin việc làm của Nhà trường</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Thông tin doanh nghiệp tuyển dụng sinh viên tốt nghiệp</p>
                         </li>
                     </ul>
@@ -88,11 +90,11 @@
                     <h3>Quy định, biểu mẫu</h3>
                     <ul>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Quyết định số 2280/QĐ-ĐHM ngày 16/6/2025 về mức thu học phí 2025-2026</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/logo-fithou.jpg" alt="FIT HOU">
                             <p>Quy chế đào tạo trình độ Đại học của Trường ĐH Mở Hà Nội (theo Quyết định số 1818/QĐ-ĐHM ngày 10/05/2024)</p>
                         </li>
                     </ul>

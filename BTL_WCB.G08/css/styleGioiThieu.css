@@ -27,21 +27,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #fff;
     border-bottom: 1px solid #ddd;
-    position: relative;
+    position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .logo {
-    font-weight: bold;
-    background: #ccc;
-    width: 60px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: auto;
 }
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
 
 .menu-toggle {
     display: none;
@@ -69,6 +72,7 @@ header {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     padding: 20px 40px;
+    margin-top: 65px;
 }
 
     .introduction h2 {

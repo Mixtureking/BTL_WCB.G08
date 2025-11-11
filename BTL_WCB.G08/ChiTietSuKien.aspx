@@ -12,7 +12,9 @@
     <form id="form1" runat="server">
         <div class="page-container">
         <header>
-            <div class="logo">LOGO</div>
+            <div class="logo">
+                <a href="TrangChu.aspx"><img src="img/logo.png" alt="logo.png" /></a> 
+            </div>
             <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="nav">
                 <a href="TrangChu.aspx">Trang chủ</a>
@@ -58,7 +60,7 @@
                             <p>Thông báo sinh viên tham gia tạo tài khoản trên Cổng thông tin việc làm của Nhà trường</p>
                         </li>
                         <li>
-                            <img src="img/Doro-shutup.png" alt="FIT HOU">
+                            <img src="img/Doro_shutup.png" alt="FIT HOU">
                             <p>Thông tin doanh nghiệp tuyển dụng sinh viên tốt nghiệp</p>
                         </li>
                     </ul>
